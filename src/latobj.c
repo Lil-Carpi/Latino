@@ -813,7 +813,7 @@ LATINO_API char *latC_astring(lat_mv *mv, lat_objeto *o) {
         return entero_acadena(getEntero(o));
     } else if (o->tipo == T_CHAR) {
         static char temp_char[2];
-        temp_char[0] = (char)getCharacter(o);
+        temp_char[0] = (char)getCaracter(o);
         temp_char[1] = '\0';
         return temp_char;
     } else if (o->tipo == T_STR) {
